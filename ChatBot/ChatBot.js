@@ -9,8 +9,8 @@ const projectID = config.googleProjectID;
 
 const credentials={
     client_email: config.googleClientEmail,
-     private_key: config.googlePrivateKey
-}
+     private_key: config.googlePrivateKey,
+};
 const sessionClient = new dialogflow.SessionsClient({projectID,credentials});  //for deploying heroku
 const sessionPath = sessionClient.sessionPath(config.googleProjectID,config.dialogFlowSessionID);
 
