@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "engines":{
-      "node":"13.7.0",
-        "npm":"6.13.6"
-    },
+  "engines": {
+    "node": "13.7.0",
+    "npm": "6.13.6"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "backend": "nodemon index.js"
   },
   "author": "suraj",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "dialogflow": "^1.1.2",
     "expres": "0.0.5",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
