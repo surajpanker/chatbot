@@ -1,6 +1,6 @@
 {
   "name": "chatbot",
-  "version": "6.13.6",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "engines": {
