@@ -15,7 +15,8 @@ const sessionClient = new dialogflow.SessionsClient({projectID,credentials});  /
 const sessionPath = sessionClient.sessionPath(config.googleProjectID,config.dialogFlowSessionID);
 
 
-module.exports ={
+module.exports =
+    {
     //added empty object parameter
     textQuery: async function(text,parameters={}){
         
