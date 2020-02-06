@@ -75,9 +75,10 @@ module.exports ={
     
 
     
-    handleAction: function(responses)
+    handleAction: async function(responses)
     {   
                 return responses;
 
     }
+
 }
