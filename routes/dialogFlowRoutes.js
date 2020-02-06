@@ -31,7 +31,7 @@ app.post('/api/df_event_query',async (req,res)=>{
         res.send(responses[0].queryResult);
     });
     
-    
+
     
     
 }
