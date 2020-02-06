@@ -72,7 +72,12 @@ module.exports ={
     },
     
     
-    
+    try{
+      let responses =await sessionClient.detectIntent(request);
+              console.log(responses);
+        } catch (err){
+            console.log(err);
+        }
 
     
     handleAction: async function(responses)
