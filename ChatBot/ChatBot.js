@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 //for deploying dialogflow
 const dialogflow = require('dialogflow');
