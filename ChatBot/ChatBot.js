@@ -64,7 +64,7 @@ module.exports ={
         languageCode: config.dialogFlowSessionLanguageCode,
       },
     }           
-  };
+           };
  // if intent matching throw query result other wise it give not intent match
       let responses =await sessionClient.detectIntent(request);
             responses= await self.handleAction(responses);
