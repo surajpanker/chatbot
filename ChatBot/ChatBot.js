@@ -71,12 +71,6 @@ module.exports ={
            return responses;
     },
     
-    
-    try{
-      
-        } catch (err){
-            console.log(err);
-        }
 
     
     handleAction:  function(responses)
