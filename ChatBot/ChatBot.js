@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //for deploying dialogflow
 const dialogflow = require('dialogflow');
@@ -10,7 +10,7 @@ const projectID = config.googleProjectID;
 const credentials={
     client_email: config.googleClientEmail,
      private_key: config.googlePrivateKey
-}
+};
 const sessionClient = new dialogflow.SessionsClient({projectID,credentials});  //for deploying heroku
 const sessionPath = sessionClient.sessionPath(config.googleProjectID,config.dialogFlowSessionID);
 
@@ -42,7 +42,7 @@ module.exports ={
                
   };
  // if intent matching throw query result other wise it give not intent match
-      let responses =await sessionClient.detectIntent(request);
+          let responses =await sessionClient.detectIntent(request);
             responses= await self.handleAction(responses);
            return responses;
     },
@@ -70,14 +70,6 @@ module.exports ={
             responses= await self.handleAction(responses);
            return responses;
     },
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
