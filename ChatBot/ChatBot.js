@@ -1,16 +1,16 @@
-'use strict'
+'use strict';
 
 //for deploying dialogflow
 const dialogflow = require('dialogflow');
 const config = require('../config/keys');
 // convert javscript object to proto struct
-const structjson =require('./utils');
+const structjson =require('./utils.js');
 const projectID = config.googleProjectID;
 
 const credentials={
     client_email: config.googleClientEmail,
-     private_key: config.googlePrivateKey
-}
+     private_key: config.googlePrivateKey,
+};
 const sessionClient = new dialogflow.SessionsClient({projectID,credentials});  //for deploying heroku
 const sessionPath = sessionClient.sessionPath(config.googleProjectID,config.dialogFlowSessionID);
 
