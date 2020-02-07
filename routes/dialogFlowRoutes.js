@@ -5,7 +5,7 @@ const chatbot =require('../ChatBot/ChatBot');
 module.exports= app =>{
     
      
-    app.get('/',(req,res)=>{res.send({'hello':'Suraj'});});
+    app.get('/',(req,res)=>{res.send({'hello':'Anubhav jain , I am coming broo'});});
     
 //for text route 
 app.post('/api/df_text_query',async (req,res)=>{
