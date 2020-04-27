@@ -8,19 +8,28 @@
   },
   "scripts": {
     "start": "node index.js",
-    "backend": "nodemon index.js"
+    "frontend": "npm run front --prefix client",
+    "backend": "npx nodemon index.js",
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "suraj",
   "license": "ISC",
   "dependencies": {
+    "actions-on-google": "^2.12.0",
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
-    "dialogflow": "^1.1.2",
+    "dialogflow": "^1.2.0",
+    "dialogflow-fulfillment": "^0.6.1",
     "expres": "0.0.5",
     "express": "^4.17.1",
-    "g": "^2.0.1"
+    "g": "^2.0.1",
+    "mongoose": "^5.9.3",
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    " nodemon": "^5.1.0",
+    "concurrently": "^5.1.0"
   },
-  "description": ""
+  "description": " "
 }
