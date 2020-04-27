@@ -51,7 +51,7 @@ class Chatbot extends Component {
         //this.setState.messages.pop();
         try
 {
-        const res = await axios.post('/api/df_text_query',  {text: queryText , userID:cookies.get('userID')});
+        const res = await axios.post('/api/df_text_query',  {text: text , userID:cookies.get('userID')});
 
         for (let msg of res.data.fulfillmentMessages) {
            // console.log(JSON.stringify(msg));
@@ -104,7 +104,7 @@ class Chatbot extends Component {
     }
 catch(e)
 {
-    says={
+    let says={
         speaks:'bot',
         msg:{
             text:"i have trouble to connect "

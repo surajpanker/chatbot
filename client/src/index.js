@@ -4,7 +4,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import registerServiceWorker from './registerServiceWorker';
+//import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 //ReactDOM.render(<App />, ocument.getElementsByClassName('card-panel teal lighten-2'));
@@ -13,6 +13,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 //  service workers: https://bit.ly/CRA-PWA
 //serviceWorker.unregister();
-//serviceWorker.register();
-serviceWorker.unregister();
-registerServiceWorker();
+serviceWorker.register();
+
