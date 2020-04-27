@@ -1,4 +1,3 @@
-
 import Logo from './images/dance.gif';
 import {withRouter} from 'react-router-dom';
 import React, { Component } from 'react';
@@ -55,7 +54,7 @@ class Chatbot extends Component {
 
         for (let msg of res.data.fulfillmentMessages) {
            // console.log(JSON.stringify(msg));
-            says = {
+           let  says = {
                 speaks: 'bot',
                 msg: msg
             }
@@ -65,7 +64,7 @@ class Chatbot extends Component {
         catch(e){
 
 
-             says={
+             let says={
                  speaks:'bot',
                  msg:{
                      text:"i have trouble to connect "
@@ -113,7 +112,7 @@ catch(e)
     this.state({messages:[...this.state.messages,says]});
 let that =this;
 setTimeout(function(){
-   this.state({showBot:false});
+    that.state({showBot:false});
 
 },2000);
 

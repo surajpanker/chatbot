@@ -1,32 +1,36 @@
 {
-  "name": "outlinebot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "chatbot",
+  "version": "4.0.1",
   "main": "index.js",
   "engines": {
-    "node": "9.7.1",
-    "npm": "6.4.1"
+    "node": "13.7.0",
+    "npm": "6.13.6"
   },
   "scripts": {
     "start": "node index.js",
-    "backend": "nodemon index.js",
-    "frontend": "npm run start --prefix client",
-    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\"",
+    "frontend": "npm run front --prefix client",
+    "backend": "npx nodemon index.js",
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\" ",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "",
+  "author": "suraj",
   "license": "ISC",
   "dependencies": {
     "actions-on-google": "^2.12.0",
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
-    "dialogflow": "^0.13.0",
+    "dialogflow": "^1.2.0",
     "dialogflow-fulfillment": "^0.6.1",
+    "expres": "0.0.5",
     "express": "^4.17.1",
-    "google-oauth-jwt": "^0.2.0",
-    "mongoose": "^5.7.8"
+    "g": "^2.0.1",
+    "ionic-native": "https://github.com/ionic-team/ionic-native/tarball/v2.9.0",
+    "mongoose": "^5.9.10",
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
-    "concurrently": "^5.0.0",
-    "nodemon": "^1.19.4"
-  }
+    "concurrently": "^5.2.0",
+    "nodemon": "^5.1.0"
+  },
+  "description": " "
 }
