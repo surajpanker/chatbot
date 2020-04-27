@@ -24,7 +24,7 @@
     "expres": "0.0.5",
     "express": "^4.17.1",
     "g": "^2.0.1",
-    "ionic-native": "https://github.com/ionic-team/ionic-native/tarball/v3.5.0",
+    "ionic-native": "https://github.com/ionic-team/ionic-native/tarball/v5.1.0",
     "mongoose": "^5.9.3",
     "yarn": "^1.22.0"
   },
